@@ -1,0 +1,23 @@
+{
+  "experiment_name": "exp03b_ringneg",
+  "manifest_path": "data/processed/berlin_mvp/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "use_box": true,
+  "box_expand_px": 8,
+
+  "positive_points": {
+    "enabled": true,
+    "strategy": "deep_inside",
+    "n_points": 3
+  },
+
+  "negative_points": {
+    "enabled": true,
+    "strategy": "ring",
+    "n_points": 8,
+    "margin_px": 18,
+    "adaptive_margin": true
+  }
+}
