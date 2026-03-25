@@ -1,7 +1,6 @@
 {
   "bbox_4326": [13.3990, 52.5065, 13.4035, 52.5100],
   "wms_url": "https://gdi.berlin.de/services/wms/dop_2025_fruehjahr",
-  "osm_date": "2018-01-01T00:00:00Z",
   "chip_size_px": 512,
   "sample_n": 40,
   "min_area_m2": 25.0,

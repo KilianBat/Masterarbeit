@@ -13,7 +13,12 @@ cfg = json.loads((ROOT / "configs" / "berlin_mvp.json").read_text())
 
 ORTHO_IMG = ROOT / "data" / "raw" / "berlin_ortho_2025.png"
 ORTHO_META = ROOT / "data" / "raw" / "berlin_ortho_2025_meta.json"
-BUILDINGS_PATH = ROOT / "data" / "raw" / "berlin_buildings.geojson"
+
+osm_date = cfg.get("osm_date")
+suffix = ""
+if osm_date:
+    suffix = "_" + osm_date[:10].replace("-", "")
+BUILDINGS_PATH = ROOT / "data" / "raw" / f"berlin_buildings{suffix}.geojson"
 
 CHIP_SIZE = cfg["chip_size_px"]
 SAMPLE_N = cfg["sample_n"]
