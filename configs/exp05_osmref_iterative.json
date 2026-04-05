@@ -1,0 +1,28 @@
+{
+  "experiment_name": "exp05_osmref_iterative",
+
+  "manifest_path": "data/processed/exp04_tightchip_baseline/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "use_box": true,
+  "box_expand_px": 0,
+
+  "stage1": {
+    "positive_points": 1
+  },
+
+  "stage2": {
+    "max_missing_pos_points": 2,
+    "max_spill_neg_points": 2,
+    "point_suppression_radius_px": 14
+  },
+
+  "mask_selection": {
+    "w_iou_prior": 0.30,
+    "w_precision_prior": 0.20,
+    "w_recall_prior": 0.20,
+    "w_area_consistency": 0.20,
+    "w_sam_score": 0.10
+  }
+}

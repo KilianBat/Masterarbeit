@@ -1,0 +1,31 @@
+{
+  "experiment_name": "exp06a_clahe",
+  "manifest_path": "data/processed/exp04_tightchip_baseline/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "use_box": true,
+  "box_expand_px": 0,
+
+  "positive_points": {
+    "enabled": true,
+    "strategy": "deep_inside",
+    "n_points": 1
+  },
+
+  "negative_points": {
+    "enabled": false,
+    "n_points": 0,
+    "margin_px": 0,
+    "adaptive_margin": false
+  },
+
+  "preprocessing": {
+    "enabled": true,
+    "clahe": true,
+    "clahe_clip_limit": 2.0,
+    "clahe_tile_grid_size": 8,
+    "gamma": false,
+    "gamma_value": 1.0
+  }
+}
