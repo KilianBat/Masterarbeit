@@ -1,0 +1,22 @@
+{
+  "area_name": "rural_luebars",
+  "subset_name": "rural_luebars_eval",
+  "osm_date_historic": "2018-01-01T00:00:00Z",
+
+  "selection": {
+    "n_unchanged_control": 15,
+    "include_all_changed": true,
+    "include_all_removed": true,
+    "random_seed": 42,
+    "iou_unchanged_threshold": 0.85,
+    "iou_removed_threshold": 0.10
+  },
+
+  "chip_generation": {
+    "chip_size_px": 512,
+    "context_factor": 1.35,
+    "padding_m": 6.0,
+    "min_side_m": 35.0,
+    "max_side_m": 110.0
+  }
+}
