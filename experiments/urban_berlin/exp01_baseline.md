@@ -20,7 +20,7 @@ Die Bounding Box begrenzt den Suchraum. Der Innenpunkt soll SAM2 stärker auf da
 - Config: `configs/berlin_mvp.json`
 - Outputs: `outputs/exp01_baseline/`
 Stand: 18.03.2026
-Commit: 
+Commit: eyp01_baseline
 
 ## Ergebnisse
 - n = 8

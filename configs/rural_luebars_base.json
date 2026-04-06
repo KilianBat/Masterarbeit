@@ -1,0 +1,21 @@
+{
+  "area_name": "rural_luebars",
+  "bbox_4326": [13.3518, 52.6160, 13.3625, 52.6218],
+  "wms_url": "https://gdi.berlin.de/services/wms/dop_2025_fruehjahr",
+
+  "osm_date_historic": "2018-01-01T00:00:00Z",
+
+  "area_filters": {
+    "min_area_m2": 25.0,
+    "max_area_m2": 1200.0,
+    "sample_n": 80
+  },
+
+  "chip_generation": {
+    "chip_size_px": 512,
+    "context_factor": 1.35,
+    "padding_m": 6.0,
+    "min_side_m": 35.0,
+    "max_side_m": 110.0
+  }
+}
