@@ -1,0 +1,5 @@
+{
+  "experiment_name": "rural_exp03_changed_relaxed_prompt",
+  "manifest_path": "data/processed/rural_luebars_changed_eval/manifest.csv",
+  "current_osm_path": "data/raw/rural_luebars_buildings.gpkg"
+}

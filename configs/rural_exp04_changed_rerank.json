@@ -1,0 +1,26 @@
+{
+  "experiment_name": "rural_exp04_changed_rerank",
+  "manifest_path": "data/processed/rural_luebars_changed_eval/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "use_box": true,
+  "box_expand_px": 24,
+
+  "positive_points": {
+    "enabled": true,
+    "strategy": "deep_inside",
+    "n_points": 1
+  },
+
+  "reranking": {
+    "enabled": true,
+    "weights": {
+      "sam_score": 0.15,
+      "area_consistency": 0.40,
+      "bbox_iou_hist": 0.20,
+      "centroid_consistency": 0.15,
+      "hist_mask_iou": 0.10
+    }
+  }
+}

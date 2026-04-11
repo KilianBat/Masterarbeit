@@ -29,3 +29,12 @@ Die externe Evaluation nach Status zeigte:
 - `removed`: alle ausgewerteten Fälle blieben auch nach der Inferenz klar „removed-like“
 
 Damit zeigt der ländliche Block, dass der Workflow nicht pauschal bewertet werden darf. Je nach Änderungstyp ergeben sich sehr unterschiedliche Stärken und Schwächen.
+
+## Changed-only mit größerem Chip
+Ein zusätzliches Changed-only-Experiment mit größerem Bildausschnitt zeigte, dass mehr Kontext die Qualität bei geänderten Gebäuden leicht verbessern kann. Der Effekt blieb jedoch klein und nicht stabil. Damit scheint der enge Chip zwar ein Teil des Problems zu sein, jedoch nicht die alleinige Ursache. Wahrscheinlich bleibt die Prompt-Strategie weiterhin zu stark auf das historische Gebäude ausgerichtet.
+
+## Changed-only mit relaxed prompt
+Ein zusätzliches Changed-only-Experiment mit größerem Chip und gelockerter Bounding Box zeigte visuell, dass das aktuelle Gebäude in mehreren Fällen besser gefunden wird. Gleichzeitig wurden die resultierenden Geometrien jedoch häufiger zu groß oder zu grob. Quantitativ ergab sich daher keine stabile Verbesserung gegenüber dem vorherigen Changed-only-Experiment. Dies spricht dafür, dass der nächste sinnvolle Schritt weniger in einer weiteren Prompt-Lockerung als vielmehr in einer verbesserten Maskenauswahl liegt.
+
+## Changed-only mit Re-Ranking
+Ein weiteres Changed-only-Experiment mit größerem Chip, gelockertem Prompt und geometriebasierter Maskenauswahl führte zur bisher klarsten Verbesserung im ländlichen Block. Im Unterschied zu den vorherigen Varianten wurden aktuelle Gebäudeformen häufiger korrekt erfasst, ohne gleichzeitig so stark zu groß zu werden. Dies deutet darauf hin, dass bei geänderten ländlichen Gebäuden die Maskenauswahl ein zentraler Erfolgsfaktor ist.
