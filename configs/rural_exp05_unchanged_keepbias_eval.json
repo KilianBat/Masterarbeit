@@ -1,0 +1,18 @@
+{
+  "experiment_name": "rural_exp05_unchanged_keepbias",
+  "decision_rules": {
+    "keep_if_iou_ge": 0.70,
+    "keep_if_abs_area_diff_le": 0.15,
+    "keep_if_centroid_shift_le_m": 1.5,
+
+    "update_if_score_ge": 0.94,
+    "update_if_iou_le": 0.50,
+    "update_if_abs_area_diff_ge": 0.22,
+    "update_if_centroid_shift_ge_m": 2.0,
+
+    "review_if_score_ge": 0.85,
+    "review_if_iou_le": 0.62,
+    "review_if_abs_area_diff_ge": 0.16,
+    "review_if_centroid_shift_ge_m": 1.2
+  }
+}

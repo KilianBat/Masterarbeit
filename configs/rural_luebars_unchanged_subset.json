@@ -1,0 +1,23 @@
+{
+  "area_name": "rural_luebars",
+  "subset_name": "rural_luebars_unchanged_eval",
+  "osm_date_historic": "2018-01-01T00:00:00Z",
+
+  "source_full_status_csv": "data/processed/rural_luebars_eval/full_status_summary.csv",
+
+  "selection": {
+    "include_statuses": ["unchanged_candidate"],
+    "sample_n_per_status": {
+      "unchanged_candidate": 20
+    },
+    "random_seed": 42
+  },
+
+  "chip_generation": {
+    "chip_size_px": 512,
+    "context_factor": 1.35,
+    "padding_m": 6.0,
+    "min_side_m": 35.0,
+    "max_side_m": 110.0
+  }
+}

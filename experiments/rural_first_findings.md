@@ -38,3 +38,9 @@ Ein zusätzliches Changed-only-Experiment mit größerem Chip und gelockerter Bo
 
 ## Changed-only mit Re-Ranking
 Ein weiteres Changed-only-Experiment mit größerem Chip, gelockertem Prompt und geometriebasierter Maskenauswahl führte zur bisher klarsten Verbesserung im ländlichen Block. Im Unterschied zu den vorherigen Varianten wurden aktuelle Gebäudeformen häufiger korrekt erfasst, ohne gleichzeitig so stark zu groß zu werden. Dies deutet darauf hin, dass bei geänderten ländlichen Gebäuden die Maskenauswahl ein zentraler Erfolgsfaktor ist.
+
+## Unchanged mit Keep-Bias
+Ein konservativer, keep-orientierter Decision Layer verhinderte im ländlichen Unchanged-Subset unnötige Verschlechterungen. Dies zeigt, dass unveränderte Gebäude im finalen Workflow nicht primär durch bessere Segmentierung, sondern vor allem durch eine robuste Verifikationslogik stabil behandelt werden sollten.
+
+## Neue Gebäude
+Für neue Gebäude zeigte ein prototypischer kandidatenbasierter Ansatz, dass größere und gut sichtbare neue Häuser grundsätzlich segmentierbar sind. Kleine, verdeckte oder in Vegetation liegende Neubauten wurden dagegen häufig verfehlt. Damit hängt die Qualität bei `new` stark von der Sichtbarkeit des Gebäudes im Orthophoto ab.

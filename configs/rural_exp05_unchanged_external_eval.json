@@ -1,0 +1,5 @@
+{
+  "experiment_name": "rural_exp05_unchanged_keepbias",
+  "manifest_path": "data/processed/rural_luebars_unchanged_eval/manifest.csv",
+  "current_osm_path": "data/raw/rural_luebars_buildings.gpkg"
+}

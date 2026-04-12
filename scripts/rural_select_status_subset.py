@@ -26,6 +26,8 @@ def main():
     hist_date = cfg["osm_date_historic"][:10].replace("-", "")
     include_statuses = set(cfg["selection"]["include_statuses"])
     source_full_status_csv = ROOT / cfg["source_full_status_csv"]
+    random_seed = int(cfg["selection"].get("random_seed", 42))
+    sample_n_per_status = cfg["selection"].get("sample_n_per_status", {})
 
     hist_path = ROOT / "data" / "raw" / f"{area_name}_buildings_{hist_date}.gpkg"
 
@@ -48,7 +50,19 @@ def main():
         how="inner"
     )
 
-    subset = merged[merged["status"].isin(include_statuses)].copy()
+    subset_parts = []
+    for status in include_statuses:
+        part = merged[merged["status"] == status].copy()
+        n_sample = sample_n_per_status.get(status, None)
+
+        if n_sample is not None:
+            n_sample = min(int(n_sample), len(part))
+            if n_sample > 0:
+                part = part.sample(n=n_sample, random_state=random_seed)
+
+        subset_parts.append(part)
+
+    subset = pd.concat(subset_parts, ignore_index=True) if subset_parts else merged.iloc[0:0].copy()
     subset = gpd.GeoDataFrame(subset, geometry="geometry", crs=hist.crs)
     subset["subset_id"] = range(1, len(subset) + 1)
 
@@ -70,7 +84,8 @@ def main():
     print("Subset status counts:")
     print(subset["status"].value_counts(dropna=False))
     print()
-    print(subset[["subset_id", "hist_osm_id", "status", "best_iou_to_2025"]].head(10))
+    if len(subset) > 0:
+        print(subset[["subset_id", "hist_osm_id", "status", "best_iou_to_2025"]].head(10))
 
 if __name__ == "__main__":
     main()

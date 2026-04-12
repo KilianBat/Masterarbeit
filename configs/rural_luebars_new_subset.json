@@ -1,0 +1,18 @@
+{
+  "area_name": "rural_luebars",
+  "subset_name": "rural_luebars_new_eval",
+  "source_new_candidates_path": "data/processed/rural_luebars_eval/new_current_candidates.gpkg",
+
+  "selection": {
+    "sample_n": 12,
+    "random_seed": 42
+  },
+
+  "chip_generation": {
+    "chip_size_px": 512,
+    "context_factor": 1.60,
+    "padding_m": 10.0,
+    "min_side_m": 45.0,
+    "max_side_m": 140.0
+  }
+}
