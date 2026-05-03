@@ -1,0 +1,4 @@
+{
+  "taxonomy_csv": "data/annotations/urban_error_taxonomy.csv",
+  "uncertainty_csv": "outputs/urban_phaseA/urban_uncertainty_summary.csv"
+}

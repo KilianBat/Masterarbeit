@@ -1,0 +1,16 @@
+{
+  "taxonomy_csv": "data/annotations/urban_error_taxonomy.csv",
+  "experiments": [
+    "exp04_tightchip_baseline",
+    "exp05_osmref_iterative",
+    "exp07_topology_aware"
+  ],
+  "thresholds": {
+    "pairwise_iou_low": 0.55,
+    "pairwise_iou_medium": 0.75,
+    "area_cv_medium": 0.15,
+    "area_cv_high": 0.30,
+    "centroid_spread_medium_m": 1.5,
+    "centroid_spread_high_m": 3.0
+  }
+}
