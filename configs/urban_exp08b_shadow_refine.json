@@ -1,0 +1,34 @@
+{
+  "experiment_name": "urban_exp08b_shadow_refine",
+  "routing_table_csv": "outputs/urban_phaseA/urban_routing_table.csv",
+  "baseline_experiment": "urban_exp08a_selective_acceptance",
+  "manifest_path": "data/processed/berlin_mvp/manifest.csv",
+
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "shadow_second_pass": {
+    "enabled_routes": ["shadow_refine"],
+    "gamma": 0.75,
+    "box_expand_px": 12,
+    "n_positive_points": 3
+  },
+
+  "reranking": {
+    "weights": {
+      "sam_score": 0.25,
+      "prior_iou": 0.25,
+      "area_consistency": 0.25,
+      "centroid_consistency": 0.15,
+      "compactness": 0.10
+    }
+  },
+
+  "acceptance_rules": {
+    "min_sam_score": 0.78,
+    "min_iou_to_prior": 0.55,
+    "max_centroid_shift_m": 2.5,
+    "min_area_ratio_vs_prior": 0.90,
+    "max_area_ratio_vs_prior": 1.30
+  }
+}

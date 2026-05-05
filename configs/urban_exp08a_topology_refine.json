@@ -1,0 +1,33 @@
+{
+  "experiment_name": "urban_exp08a_topology_refine",
+  "manifest_path": "data/processed/berlin_mvp/manifest.csv",
+  "routing_table_csv": "outputs/urban_phaseA/urban_routing_table.csv",
+
+  "pass1_experiments": {
+    "exp04": "exp04_tightchip_baseline",
+    "exp05": "exp05_osmref_iterative",
+    "exp07": "exp07_topology_aware"
+  },
+
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+
+  "topology_second_pass": {
+    "enabled_for_routes": ["topology_refine"],
+    "box_expand_px": 18,
+    "n_positive_points": 4,
+    "max_negative_points": 2,
+    "min_negative_area_px2": 150.0
+  },
+
+  "reranking": {
+    "weights": {
+      "sam_score": 0.20,
+      "prior_iou": 0.30,
+      "area_consistency": 0.20,
+      "bbox_iou_prior": 0.15,
+      "centroid_consistency": 0.10,
+      "shape_match": 0.05
+    }
+  }
+}
