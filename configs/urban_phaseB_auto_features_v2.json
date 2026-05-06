@@ -1,0 +1,16 @@
+{
+  "manifest_path": "data/processed/berlin_mvp/manifest.csv",
+  "routing_table_csv": "outputs/urban_phaseA/urban_routing_table.csv",
+  "uncertainty_csv": "outputs/urban_phaseA/urban_uncertainty_summary.csv",
+
+  "thresholds": {
+    "shadow_dark_frac": 0.18,
+    "shadow_mean_drop": 14.0,
+    "shadow_inside_std": 20.0,
+    "shadow_mean_drop_relaxed": 10.0,
+
+    "topology_hull_gap_frac": 0.08,
+    "topology_compactness_max": 0.45,
+    "topology_edge_density_high": 0.16
+  }
+}
