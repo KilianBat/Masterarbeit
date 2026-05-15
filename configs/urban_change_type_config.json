@@ -1,0 +1,21 @@
+{
+  "experiment_name": "urban_exp08b_shadow_refine",
+  "routing_table_csv": "outputs/urban_phaseA/urban_routing_table.csv",
+  "uncertainty_csv": "outputs/urban_phaseA/urban_uncertainty_summary.csv",
+  "external_eval_csv": "outputs/urban_exp08b_shadow_refine/external_eval_osm2025.csv",
+  "thresholds": {
+    "unchanged_keep_iou_min": 0.80,
+    "unchanged_keep_area_abs_max": 0.18,
+    "unchanged_keep_centroid_max_m": 1.5,
+    "modified_sam_score_min": 0.82,
+    "modified_iou_min": 0.50,
+    "modified_area_abs_max": 0.60,
+    "modified_centroid_max_m": 10.0,
+    "removed_iou_max": 0.18,
+    "removed_sam_score_max": 0.55
+  },
+  "reference_eval": {
+    "enabled": true,
+    "ref_unchanged_iou_min": 0.90
+  }
+}
