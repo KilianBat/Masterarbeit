@@ -1,0 +1,9 @@
+id,shadow_strong,courtyard,multi_roof_levels,neighbor_merge,oversegmentation,undersegmentation,rounded_edges,wrong_building_focus,polygon_invalid,primary_error_type,secondary_error_type,best_experiment_so_far,problem_stage,notes
+2,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,
+4,1,0,1,0,1,0,1,0,0,shadow_roof,multi_level_roof,exp04,mask_selection,
+12,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,
+16,1,0,1,0,1,0,1,0,0,shadow_roof,oversegmentation,exp05,mask_selection,
+21,1,0,1,1,0,1,1,0,0,multi_level_roof,shadow_roof,exp07,object_structure,
+27,0,1,1,0,1,0,1,0,0,multi_part_roof,courtyard_structure,exp07,object_structure,
+32,1,1,1,1,1,0,1,0,0,courtyard_structure,shadow_roof,exp07,object_localization,
+34,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,

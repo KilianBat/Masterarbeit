@@ -1,0 +1,21 @@
+element,id,building,name,hist_row_idx,hist_osm_id,status,best_iou_to_2025,matched_cur_row_idx,matched_cur_osm_id,subset_id
+way,309226122,yes,,302,309226122,unchanged_candidate,1.0,295.0,309226122.0,1
+way,309228446,yes,,344,309228446,unchanged_candidate,1.0,337.0,309228446.0,2
+way,309228296,yes,,338,309228296,unchanged_candidate,1.0,331.0,309228296.0,3
+way,282191525,yes,,153,282191525,unchanged_candidate,1.0,152.0,282191525.0,4
+way,73541171,yes,,56,73541171,unchanged_candidate,1.0,55.0,73541171.0,5
+way,76021026,yes,,97,76021026,unchanged_candidate,1.0,96.0,76021026.0,6
+way,309228816,yes,,355,309228816,unchanged_candidate,1.0,348.0,309228816.0,7
+way,76021004,yes,,85,76021004,unchanged_candidate,1.0,84.0,76021004.0,8
+way,309230714,yes,,380,309230714,unchanged_candidate,1.0,373.0,309230714.0,9
+way,282191529,yes,,156,282191529,unchanged_candidate,1.0,155.0,282191529.0,10
+way,309226322,yes,,307,309226322,unchanged_candidate,1.0,300.0,309226322.0,11
+way,282191632,yes,,218,282191632,unchanged_candidate,1.0,215.0,282191632.0,12
+way,67400878,yes,,33,67400878,unchanged_candidate,1.0,33.0,67400878.0,13
+way,76021020,yes,Pension zum Lübarser Hufeisen,94,76021020,unchanged_candidate,1.0,93.0,76021020.0,14
+way,309230749,yes,,381,309230749,unchanged_candidate,1.0,374.0,309230749.0,15
+way,309230312,yes,,375,309230312,unchanged_candidate,1.0,368.0,309230312.0,16
+way,282191692,yes,,265,282191692,unchanged_candidate,1.0,261.0,282191692.0,17
+way,282191483,yes,,118,282191483,unchanged_candidate,1.0,117.0,282191483.0,18
+way,309228788,yes,,353,309228788,unchanged_candidate,1.0,346.0,309228788.0,19
+way,282191477,yes,,113,282191477,unchanged_candidate,1.0,112.0,282191477.0,20

@@ -1,0 +1,21 @@
+{
+  "experiment_name": "rural_exp06_new_centerprompt",
+  "manifest_path": "data/processed/rural_luebars_new_eval/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+  "center_prompt": {
+    "use_center_point": true,
+    "use_center_box": true,
+    "center_box_frac": 0.55
+  },
+  "reranking": {
+    "weights": {
+      "sam_score": 0.25,
+      "centeredness": 0.35,
+      "area_reasonableness": 0.25,
+      "compactness_proxy": 0.15
+    },
+    "min_area_frac": 0.01,
+    "max_area_frac": 0.4
+  }
+}

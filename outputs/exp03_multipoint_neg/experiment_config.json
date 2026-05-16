@@ -1,0 +1,16 @@
+{
+  "experiment_name": "exp03_multipoint_neg",
+  "manifest_path": "data/processed/berlin_mvp/manifest.csv",
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+  "use_box": true,
+  "positive_points": {
+    "enabled": true,
+    "n_points": 5
+  },
+  "negative_points": {
+    "enabled": true,
+    "n_points": 4,
+    "margin_px": 15
+  }
+}

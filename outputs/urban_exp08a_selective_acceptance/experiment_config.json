@@ -1,0 +1,19 @@
+{
+  "experiment_name": "urban_exp08a_selective_acceptance",
+  "routing_table_csv": "outputs/urban_phaseA/urban_routing_table.csv",
+  "topology_pass_experiment": "urban_exp08a_topology_refine",
+  "pass1_experiments": {
+    "exp04": "exp04_tightchip_baseline",
+    "exp05": "exp05_osmref_iterative",
+    "exp07": "exp07_topology_aware"
+  },
+  "acceptance_rules": {
+    "enabled_routes": [
+      "topology_refine"
+    ],
+    "min_sam_score": 0.72,
+    "max_iou_drop_vs_pass1": 0.05,
+    "max_abs_area_diff_increase_vs_pass1": 0.1,
+    "reject_if_flag_review": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "experiment_name": "exp04_tightchip_baseline",
+  "source_manifest_path": "data/processed/berlin_mvp/manifest.csv",
+  "manifest_path": "data/processed/exp04_tightchip_baseline/manifest.csv",
+  "ortho_image": "data/raw/berlin_ortho_2025.png",
+  "ortho_meta": "data/raw/berlin_ortho_2025_meta.json",
+  "chip_generation": {
+    "chip_size_px": 512,
+    "context_factor": 1.35,
+    "padding_m": 6.0,
+    "min_side_m": 45.0,
+    "max_side_m": 140.0
+  },
+  "checkpoint": "third_party/sam2_repo/checkpoints/sam2.1_hiera_large.pt",
+  "config_name": "configs/sam2.1/sam2.1_hiera_l.yaml",
+  "use_box": true,
+  "box_expand_px": 0,
+  "positive_points": {
+    "enabled": true,
+    "strategy": "deep_inside",
+    "n_points": 1
+  },
+  "negative_points": {
+    "enabled": false,
+    "n_points": 0,
+    "margin_px": 0,
+    "adaptive_margin": false
+  }
+}

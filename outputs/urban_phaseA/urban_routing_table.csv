@@ -1,0 +1,9 @@
+id,shadow_strong,courtyard,multi_roof_levels,neighbor_merge,oversegmentation,undersegmentation,rounded_edges,wrong_building_focus,polygon_invalid,primary_error_type,secondary_error_type,best_experiment_so_far,problem_stage,notes,mean_pairwise_iou,area_cv,centroid_spread_m,decision_disagreement,uncertainty_points,uncertainty_level,suggested_refinement,routing_decision,pass1_source
+2,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,,0.9802385678774004,0.0025052157502975,0.0660424472771101,False,0,low,no_refine,no_refine,exp04
+4,1,0,1,0,1,0,1,0,0,shadow_roof,multi_level_roof,exp04,mask_selection,,0.8034770895161122,0.1724799752014226,1.0287686009270731,False,1,low,no_refine,shadow_refine,exp04
+12,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,,0.8146883866972013,0.1608407589191895,0.861933877863628,True,2,medium,no_refine,review_keep,exp04
+16,1,0,1,0,1,0,1,0,0,shadow_roof,oversegmentation,exp05,mask_selection,,0.7959470453357649,0.131293293374844,1.1816575860600411,False,0,low,no_refine,shadow_refine,exp05
+21,1,0,1,1,0,1,1,0,0,multi_level_roof,shadow_roof,exp07,object_structure,,0.4934943917325555,0.6415788311363261,3.9396361955049137,False,6,high,topology_refine,topology_refine,exp07
+27,0,1,1,0,1,0,1,0,0,multi_part_roof,courtyard_structure,exp07,object_structure,,0.8161532463436236,0.0865347184632314,0.7354966317954785,False,0,low,no_refine,topology_refine,exp07
+32,1,1,1,1,1,0,1,0,0,courtyard_structure,shadow_roof,exp07,object_localization,,0.7380811062547629,0.1597175076677953,2.30927163323072,False,3,medium,context_refine,topology_refine,exp07
+34,0,0,0,0,0,0,0,0,0,stable_case,,exp04,none,,0.9864018448256916,0.0036183025770534,0.0757753309035498,False,0,low,no_refine,no_refine,exp04

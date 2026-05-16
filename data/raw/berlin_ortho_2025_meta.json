@@ -1,0 +1,13 @@
+{
+  "crs": "EPSG:25833",
+  "bbox_proj": [
+    391338.8863941439,
+    5818579.682938572,
+    391652.89298343076,
+    5818962.194527254
+  ],
+  "width": 1571,
+  "height": 1913,
+  "layer_name": "dop_2025",
+  "wms_url": "https://gdi.berlin.de/services/wms/dop_2025_fruehjahr"
+}
