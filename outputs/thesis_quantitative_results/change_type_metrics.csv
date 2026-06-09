@@ -1,0 +1,7 @@
+metric,value,interpretation
+exact_multiclass_accuracy,0.625,predicted class equals simplified reference class
+review_aware_binary_accuracy,0.875,modified and review are treated as change/review alerts
+review_aware_precision,1.0,share of predicted alerts that correspond to modified reference objects
+review_aware_recall,0.8333333333333334,share of modified reference objects captured as modified or review
+review_aware_f1,0.9090909090909091,harmonic mean of review-aware precision and recall
+n_objects,8.0,number of evaluated urban objects

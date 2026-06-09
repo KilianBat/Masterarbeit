@@ -1,0 +1,22 @@
+{
+  "urban_ortho": "data/raw/berlin_ortho_2025.png",
+  "urban_meta": "data/raw/berlin_ortho_2025_meta.json",
+  "urban_current_geojson": "data/raw/berlin_buildings.geojson",
+  "reports": {
+    "baseline_exp04": "outputs/exp04_tightchip_baseline/berlin_update_report.csv",
+    "topology_raw_exp08a": "outputs/urban_exp08a_topology_refine/berlin_update_report.csv",
+    "selective_exp08a": "outputs/urban_exp08a_selective_acceptance/berlin_update_report.csv",
+    "shadow_exp08b": "outputs/urban_exp08b_shadow_refine/berlin_update_report.csv",
+    "change_type": "outputs/urban_change_types/urban_change_type_report.csv",
+    "external_eval": "outputs/urban_exp08b_shadow_refine/external_eval_osm2025.csv"
+  },
+  "output_dir": "outputs/thesis_visual_results",
+  "case_ids": {
+    "topology_success": 32,
+    "review_case": 21,
+    "shadow_case": 16,
+    "unchanged_example": 2,
+    "modified_example": 4,
+    "review_example": 21
+  }
+}

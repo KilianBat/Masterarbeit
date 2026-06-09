@@ -1,0 +1,49 @@
+id,experiment_key,experiment_name,module_step,iou_final_vs_osm2025,iou_orig2018_vs_osm2025,delta_iou_vs_osm2025,improved_vs_2018
+2,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.9649893308403568,0.9649893308403568,0.0,False
+4,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.3240838019328412,0.4464596282088682,-0.122375826276027,False
+12,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.8083744898942217,0.8083744898942217,0.0,False
+16,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.5573258990120951,0.6693893767338491,-0.112063477721754,False
+21,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.1026989058486611,0.1280298211094826,-0.0253309152608215,False
+27,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.8357287485940498,0.8505063935661726,-0.0147776449721228,False
+32,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.5435918746487658,0.8344287019915239,-0.290836827342758,False
+34,exp04_tightchip_baseline,Exp04 baseline,tight-chip baseline,0.935040668434242,0.935040668434242,0.0,False
+2,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.9649893308403568,0.9649893308403568,0.0,False
+4,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.386940440779066,0.4464596282088682,-0.0595191874298021,False
+12,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.7083479662252631,0.8083744898942217,-0.1000265236689585,False
+16,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.6172232387216944,0.6693893767338491,-0.0521661380121547,False
+21,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.1006327338364491,0.1280298211094826,-0.0273970872730334,False
+27,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.7012864439692436,0.8505063935661726,-0.149219949596929,False
+32,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.5899226162246812,0.8344287019915239,-0.2445060857668426,False
+34,exp05_osmref_iterative,Exp05 OSM prior,prior-guided iteration,0.935040668434242,0.935040668434242,0.0,False
+2,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.9649893308403568,0.9649893308403568,0.0,False
+4,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.3240838019328412,0.4464596282088682,-0.122375826276027,False
+12,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.8083744898942217,0.8083744898942217,0.0,False
+16,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.5573258990120951,0.6693893767338491,-0.112063477721754,False
+21,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.3489581728924383,0.1280298211094826,0.2209283517829557,True
+27,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.7902682814892467,0.8505063935661726,-0.0602381120769259,False
+32,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.5751180608407369,0.8344287019915239,-0.2593106411507869,False
+34,exp07_topology_aware,Exp07 topology-aware,topology-aware prompting,0.935040668434242,0.935040668434242,0.0,False
+2,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.9649893308403568,0.9649893308403568,0.0,False
+4,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.3240838019328412,0.4464596282088682,-0.122375826276027,False
+12,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.8083744898942217,0.8083744898942217,0.0,False
+16,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.6172232387216944,0.6693893767338491,-0.0521661380121547,False
+21,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.1280298211094826,0.1280298211094826,0.0,False
+27,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.6976535971173828,0.8505063935661726,-0.1528527964487898,False
+32,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.676939720112822,0.8344287019915239,-0.1574889818787018,False
+34,urban_exp08a_topology_refine,Exp08a raw topology pass,specialised topology second pass without final gate,0.935040668434242,0.935040668434242,0.0,False
+2,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.9649893308403568,0.9649893308403568,0.0,False
+4,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.3240838019328412,0.4464596282088682,-0.122375826276027,False
+12,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.8083744898942217,0.8083744898942217,0.0,False
+16,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.6172232387216944,0.6693893767338491,-0.0521661380121547,False
+21,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.3489581728924383,0.1280298211094826,0.2209283517829557,True
+27,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.7902682814892467,0.8505063935661726,-0.0602381120769259,False
+32,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.676939720112822,0.8344287019915239,-0.1574889818787018,False
+34,urban_exp08a_selective_acceptance,Exp08a selective acceptance,topology pass with acceptance gate,0.935040668434242,0.935040668434242,0.0,False
+2,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.9649893308403568,0.9649893308403568,0.0,False
+4,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.3202844538757713,0.4464596282088682,-0.1261751743330968,False
+12,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.8083744898942217,0.8083744898942217,0.0,False
+16,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.6302136945963343,0.6693893767338491,-0.0391756821375148,False
+21,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.3489581728924383,0.1280298211094826,0.2209283517829557,True
+27,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.7902682814892467,0.8505063935661726,-0.0602381120769259,False
+32,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.676939720112822,0.8344287019915239,-0.1574889818787018,False
+34,urban_exp08b_shadow_refine,Exp08b shadow refine,shadow refinement added to selective acceptance,0.935040668434242,0.935040668434242,0.0,False

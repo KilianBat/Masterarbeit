@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Quantitative evaluation of the urban change-type classification layer.}
+\label{tab:change_type_metrics}
+\small
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Exact class accuracy & 0.625 \\
+Review-aware binary accuracy & 0.875 \\
+Review-aware precision & 1.000 \\
+Review-aware recall & 0.833 \\
+Review-aware F1 & 0.909 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.35em}
+\parbox{0.88\textwidth}{\footnotesize \textit{Note.} In the review-aware binary view, both \texttt{modified} and \texttt{review} are treated as operational change/review alerts. This reflects the intended use of \texttt{review} as a conservative escalation state rather than as an automatic overwrite decision.}
+\end{table}

@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{Urban ablation summary of the main refinement steps.}
+\label{tab:urban_ablation_summary}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.5cm} >{\centering\arraybackslash}p{1.7cm} >{\centering\arraybackslash}p{1.7cm} >{\centering\arraybackslash}p{1.7cm} >{\centering\arraybackslash}p{1.7cm} >{\centering\arraybackslash}p{2.0cm}}
+\toprule
+Experiment & Mean IoU & $\Delta$ prev. & $\Delta$ base & Improved & Keep/Update/Review \\
+\midrule
+Exp04 baseline & 0.634 & +0.000 & +0.000 & 0/8 & 3/5/0 \\
+Exp05 OSM prior & 0.626 & -0.008 & -0.008 & 0/8 & 2/6/0 \\
+Exp07 topology-aware & 0.663 & +0.037 & +0.029 & 1/8 & 3/5/0 \\
+Exp08a raw topology pass & 0.644 & -0.019 & +0.010 & 0/8 & 3/4/1 \\
+Exp08a selective acceptance & 0.683 & +0.039 & +0.049 & 1/8 & 3/5/0 \\
+Exp08b shadow refine & 0.684 & +0.001 & +0.050 & 1/8 & 3/5/0 \\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.35em}
+\parbox{0.97\textwidth}{\footnotesize \textit{Note.} Mean IoU is measured against the retrospective OSM 2025 reference. $\Delta$ prev. denotes the change relative to the previous row, while $\Delta$ base denotes the change relative to the first baseline row. Keep/Update/Review reports the number of objects assigned to each decision state.}
+\end{table}

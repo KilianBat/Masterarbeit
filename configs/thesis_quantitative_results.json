@@ -1,0 +1,56 @@
+{
+  "output_dir": "outputs/thesis_quantitative_results",
+  "urban_ablation_experiments": [
+    {
+      "key": "exp04_tightchip_baseline",
+      "name": "Exp04 baseline",
+      "module_step": "tight-chip baseline",
+      "external_eval_csv": "outputs/exp04_tightchip_baseline/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/exp04_tightchip_baseline/berlin_update_report.csv"
+    },
+    {
+      "key": "exp05_osmref_iterative",
+      "name": "Exp05 OSM prior",
+      "module_step": "prior-guided iteration",
+      "external_eval_csv": "outputs/exp05_osmref_iterative/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/exp05_osmref_iterative/berlin_update_report.csv"
+    },
+    {
+      "key": "exp07_topology_aware",
+      "name": "Exp07 topology-aware",
+      "module_step": "topology-aware prompting",
+      "external_eval_csv": "outputs/exp07_topology_aware/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/exp07_topology_aware/berlin_update_report.csv"
+    },
+    {
+      "key": "urban_exp08a_topology_refine",
+      "name": "Exp08a raw topology pass",
+      "module_step": "specialised topology second pass without final gate",
+      "external_eval_csv": "outputs/urban_exp08a_topology_refine/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/urban_exp08a_topology_refine/berlin_update_report.csv"
+    },
+    {
+      "key": "urban_exp08a_selective_acceptance",
+      "name": "Exp08a selective acceptance",
+      "module_step": "topology pass with acceptance gate",
+      "external_eval_csv": "outputs/urban_exp08a_selective_acceptance/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/urban_exp08a_selective_acceptance/berlin_update_report.csv"
+    },
+    {
+      "key": "urban_exp08b_shadow_refine",
+      "name": "Exp08b shadow refine",
+      "module_step": "shadow refinement added to selective acceptance",
+      "external_eval_csv": "outputs/urban_exp08b_shadow_refine/external_eval_osm2025.csv",
+      "update_report_csv": "outputs/urban_exp08b_shadow_refine/berlin_update_report.csv"
+    }
+  ],
+  "per_object_plot_experiments": [
+    "exp04_tightchip_baseline",
+    "exp07_topology_aware",
+    "urban_exp08a_selective_acceptance",
+    "urban_exp08b_shadow_refine"
+  ],
+  "change_type_report_csv": "outputs/urban_change_types/urban_change_type_report.csv",
+  "change_type_predicted_labels": ["unchanged", "modified", "review"],
+  "change_type_reference_labels": ["unchanged", "modified"]
+}

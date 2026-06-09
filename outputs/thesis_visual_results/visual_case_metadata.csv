@@ -1,0 +1,6 @@
+id,decision,final_source,selected_source,predicted_change_type,reference_change_type,iou_orig2018_vs_osm2025,iou_final_vs_osm2025
+2,keep,osm,baseline_current_best,unchanged,unchanged,0.9649893308403568,0.9649893308403568
+4,update,sam2,shadow_pass2,modified,modified,0.4464596282088682,0.3202844538757713
+16,update,sam2,shadow_pass2,modified,modified,0.6693893767338491,0.6302136945963343
+21,update,sam2,baseline_current_best,review,modified,0.1280298211094826,0.3489581728924383
+32,update,sam2,baseline_current_best,modified,modified,0.8344287019915239,0.676939720112822
