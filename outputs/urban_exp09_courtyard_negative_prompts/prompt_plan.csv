@@ -1,0 +1,4 @@
+id,chip_path,positive_points_px,negative_points_px,reason,manual_review_required,debug_figure
+21,data/processed/exp04_tightchip_baseline/chips/0021.png,"[[256, 200], [310, 310]]","[[128, 256], [415, 200], [320, 455]]",courtyard / multi-level roof case; previous specialised pass unstable,True,outputs/urban_exp09_courtyard_negative_prompts/figures/prompt_debug_id0021.png
+32,data/processed/exp04_tightchip_baseline/chips/0032.png,"[[240, 280], [220, 165]]","[[190, 256], [320, 320]]",courtyard / context ambiguity; topology refinement previously helped,True,outputs/urban_exp09_courtyard_negative_prompts/figures/prompt_debug_id0032.png
+27,data/processed/exp04_tightchip_baseline/chips/0027.png,"[[290, 200], [256, 330]]","[[128, 256]]",multi-part roof / potential inner non-building area,True,outputs/urban_exp09_courtyard_negative_prompts/figures/prompt_debug_id0027.png

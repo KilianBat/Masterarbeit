@@ -1,0 +1,57 @@
+{
+  "experiment_name": "urban_exp09_courtyard_negative_prompts",
+  "description": "Targeted negative point prompts for courtyard and complex-roof cases. This experiment tests whether explicit exclusion cues inside courtyards improve the SAM2 update proposals compared with the earlier globally applied ring-negative variant.",
+  "repo_root": ".",
+  "candidate_chip_dirs": [
+    "data/processed/exp04_tightchip_baseline/chips",
+    "data/processed/berlin_mvp/chips"
+  ],
+  "output_dir": "outputs/urban_exp09_courtyard_negative_prompts",
+  "target_cases": [
+    {
+      "id": 21,
+      "reason": "courtyard / multi-level roof case; previous specialised pass unstable",
+      "negative_points_px": [
+        [128, 256],
+        [415, 200],
+        [320, 455]
+      ],
+      "positive_points_px": [
+        [256, 200],
+        [310, 310]
+      ],
+      "manual_review_required": true
+    },
+    {
+      "id": 32,
+      "reason": "courtyard / context ambiguity; topology refinement previously helped",
+      "negative_points_px": [
+        [190, 256],
+        [320, 320]
+      ],
+      "positive_points_px": [
+        [240, 280],
+        [220, 165]
+      ],
+      "manual_review_required": true
+    },
+    {
+      "id": 27,
+      "reason": "multi-part roof / potential inner non-building area",
+      "negative_points_px": [[128, 256]],
+      "positive_points_px": [
+        [290, 200],
+        [256, 330]
+      ],
+      "manual_review_required": true
+    }
+  ],
+  "baseline_external_eval_csv": "outputs/exp04_tightchip_baseline/external_eval_osm2025.csv",
+  "reference_external_eval_csv": "outputs/urban_exp08b_shadow_refine/external_eval_osm2025.csv",
+  "future_exp09_external_eval_csv": "outputs/urban_exp09_courtyard_negative_prompts/external_eval_osm2025.csv",
+  "notes": [
+    "The default negative point positions are placeholders at chip centre and must be checked on the generated debug figures before running SAM2.",
+    "For a valid experiment, place the negative point into the courtyard or non-building area that should be excluded, not on the building roof itself.",
+    "The experiment is intentionally targeted. It should not replace the earlier Exp03b ring-negative result, which was a global strategy and often degraded performance."
+  ]
+}
