@@ -1,0 +1,4 @@
+experiment,mean_iou_target_ids,improved_objects_target_ids,n_objects
+Exp04 baseline,0.49400650969715887,0,3
+Exp08b current best,0.6053887248315023,1,3
+Exp09 courtyard negative prompts,0.5075928929955468,1,3
